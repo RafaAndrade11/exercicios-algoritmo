@@ -6,23 +6,26 @@ Algoritmo "Ex 72"
 //0 1  2  3  4  5  6  7  8  9
 
 Var
-vet: vetor[1..8] de inteiro
-contador, numero: inteiro
-
+vet: vetor[0..9] de inteiro
+valor, tamanhoVet, i: inteiro
 
 Inicio
-contador <- 0
-numero <- 5
+valor <- 5
+tamanhoVet <- 9
 
-Para contador <- 0 ate 9 faca
-     Escreva (numero, " ")
-     numero <- numero + 5
-FimPara
-Escreval
-contador <- 0
-Para contador <- 0 ate 9 faca
-     Escreva (contador, "  ")
-FimPara
+para i de 0 ate tamanhoVet faca
+
+     vet[i] <- valor
+     valor <- valor + 5
+     escreva (vet[i])
+fimpara
+
+escreval
+
+para i de 0 ate tamanhoVet faca
+     escreva (i, " ")
+fimpara
+
 
 
 Fimalgoritmo
